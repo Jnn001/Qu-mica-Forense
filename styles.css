@@ -1,3 +1,15 @@
+body{
+    margin: 0px;
+}
 .titulo{
-  font-family: "Rowdies";
+    font-family: "Hubot Sans";
+    background-color: #ceeaea;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+p{
+    font-family: "Poppins";
 }
