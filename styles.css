@@ -13,3 +13,12 @@ body{
 p{
     font-family: "Poppins";
 }
+.texto{
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.um{
+   padding: 100%;
+}
