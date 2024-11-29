@@ -3,6 +3,7 @@ body{
 }
 .titulo{
     font-family: "Hubot Sans";
+    font-size: 20px;
     background-color: #ceeaea;
     padding-left: 2%;
     padding-right: 2%;
@@ -15,10 +16,10 @@ p{
 }
 .texto{
     padding-left: 5%;
-    padding-right: 2%;
+    padding-right: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 .um{
-   padding: 10%;
+   padding-top: 7vw;
 }
