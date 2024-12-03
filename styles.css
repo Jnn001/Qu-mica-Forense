@@ -45,11 +45,26 @@ p {
     font-family: var(--fonte-texto);
 }
 
-.texto {
+.texto__espaco {
     padding-left: 4em;
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     background: var(--cor-principal);
     margin: 1em 3em;
+}
+
+.texto__titulo {
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.botao:checked ~ .texto {
+    display: none;
+}
+
+.botao {
+    display: none;
 }
