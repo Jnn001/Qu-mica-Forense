@@ -47,11 +47,9 @@ p {
 
 .texto__espaco {
     padding-left: 4em;
-    padding-right: 1em;
+    padding-right: 4em;
     padding-top: 1em;
     padding-bottom: 1em;
-    background: var(--cor-principal);
-    margin: 1em 3em;
 }
 
 .texto__titulo {
@@ -67,6 +65,12 @@ p {
 
 .botao:checked ~ .texto {
     display: block;
+    padding-left: 4em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: var(--cor-principal);
+    margin: 1em 0em;
 }
 
 .botao {
