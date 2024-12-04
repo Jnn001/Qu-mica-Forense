@@ -2,8 +2,8 @@
     --fonte-titulo: "Ubuntu";
     --fonte-texto: "Poppins";
     --cor-principal: #434343;
-    --cor-secundaria: #3bffff;
-    --cor-terciaria: #2fff7f;
+    --cor-secundaria: #37daeb;
+    --cor-terciaria: #2be558;
     --cor-de-fundo: #252530;
     --cor-texto: white;
     --gradiente: linear-gradient(90deg, #00987a, #00984c);
@@ -81,7 +81,7 @@ p {
     background: var(--cor-secundaria);
     padding: 15px 25px;
     border-radius: 200px;
-    border: solid 3px var(--cor-terciaria);
+    border: solid 4px var(--cor-terciaria);
     text-align: center;
     display: flex;
     width: 8em;
@@ -112,7 +112,7 @@ p {
     background: var(--cor-principal);
     margin-bottom: 1em;
     margin-top: 0em;
-    border-left: solid 3px var(--cor-terciaria);
+    border-left: solid 4px var(--cor-terciaria);
     border-image: linear-gradient(180deg, var(--cor-terciaria), transparent)1;
     border-radius: 0 50px 50px 0;
 }
@@ -124,6 +124,17 @@ p {
 
 .botao {
     display: none;
+}
+
+.texto__titulo:hover {
+    background: var(--cor-terciaria);
+    border: solid 4px var(--cor-secundaria);
+    color: white;
+}
+
+.texto__titulo:hover ~ .texto {
+    border-left: solid 4px var(--cor-terciaria);
+    border-image: linear-gradient(180deg, var(--cor-secundaria), transparent)1;
 }
 
 @media screen and (max-width: 550px) {
