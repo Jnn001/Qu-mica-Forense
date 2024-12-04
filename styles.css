@@ -79,11 +79,12 @@ p {
 
 .texto__explicacao {
     padding-left: 4em;
-    padding-right: 1em;
+    padding-right: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
     background: var(--cor-principal);
     margin: 0 4em 4em 4em;
+    border-radius: 50px;
 }
 
 .botao:checked ~ .texto {
@@ -107,4 +108,34 @@ p {
 
 .botao {
     display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .texto__explicacao {
+        padding-right: 2em;
+        padding-left: 2em;
+        border-radius: 40px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .texto-0 {
+        font-size: 20px;
+    }
+
+    .textos {
+        margin-left: 2em;
+        margin-right: 2em
+    }
+
+    .texto__espaco {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .botao:checked ~ .texto {
+        padding-right: 2em;
+        padding-left: 2em;
+        border-radius: 0 40px 40px 0;
+    }
 }
