@@ -61,8 +61,12 @@ p {
     font-size: 20px;
 }
 
-.botao:checked ~ .texto {
+.texto {
     display: none;
+}
+
+.botao:checked ~ .texto {
+    display: block;
 }
 
 .botao {
