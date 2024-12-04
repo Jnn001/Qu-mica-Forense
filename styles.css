@@ -135,6 +135,8 @@ p {
 
     .textos {
         margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em
     }
     
     .texto__explicacao {
@@ -149,11 +151,6 @@ p {
         font-size: 20px;
     }
 
-    .textos {
-        margin-left: 2em;
-        margin-right: 2em
-    }
-
     .texto__espaco {
         padding-left: 0;
         padding-right: 0;
@@ -164,5 +161,4 @@ p {
         border-radius: 0 40px 40px 0;
         margin-bottom: 0;
     }
-    
 }
