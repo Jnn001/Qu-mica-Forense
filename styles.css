@@ -111,12 +111,18 @@ p {
 }
 
 @media screen and (max-width: 550px) {
+    .titulo {
+        padding-left: 1.75em;
+        margin-bottom: 2em;
+        font-size: 17.5px;
+    }
+    
     .texto__explicacao {
-        padding-right: 2em;
-        padding-left: 2em;
+        padding: 1.5em;
         border-radius: 40px;
         margin-left: 2em;
         margin-right: 2em;
+        margin-bottom: 2em;
     }
 
     .texto-0 {
@@ -134,8 +140,8 @@ p {
     }
     
     .botao:checked ~ .texto {
-        padding-right: 2em;
-        padding-left: 2em;
+        padding: 1.5em;
         border-radius: 0 40px 40px 0;
+        margin-bottom: 0;
     }
 }
