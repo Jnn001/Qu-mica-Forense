@@ -25,6 +25,9 @@ body {
     padding-bottom: 1em;
     text-align: center;
     margin-bottom: 3em;
+    border-bottom: solid 4px;
+    border-image: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria)) 1;
+    text-shadow: 0px 0px 7.5px #ffffff82;
 }
 
 .subtitulo {
@@ -40,6 +43,7 @@ h1 {
 h2 {
     font-family: var(--fonte-titulo);
     text-transform: uppercase;
+    text-shadow: 0px 0px 4px #37daeb87;
 }
 
 h3 {
@@ -96,9 +100,9 @@ p {
 
 .texto__explicacao {
     padding-left: 4em;
-    padding-right: 2em;
+    padding-right: 4em;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     background: var(--cor-principal);
     margin: 0 4em 4em 4em;
     border-radius: 50px;
@@ -158,6 +162,7 @@ p {
     
     .texto__explicacao {
         padding: 1.5em;
+        padding-top: 1em;
         border-radius: 40px;
         margin-left: 2em;
         margin-right: 2em;
