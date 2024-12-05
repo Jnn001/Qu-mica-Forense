@@ -91,7 +91,7 @@ p {
     border: solid 3px var(--cor-terciaria);
     text-align: center;
     display: flex;
-    width: 10.75em;
+    width: 12em;
     flex-direction: column;
     box-shadow: inset -5px -2px 20px 1px #000000bf;
 }
@@ -183,7 +183,7 @@ p {
     .texto__titulo {
         padding-left: 18px;
         padding-right: 18px;
-        font-size: 17.5px;
+        font-size: 17.25px;
     }
     
     .botao:checked ~ .texto {
