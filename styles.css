@@ -27,7 +27,7 @@ body {
     margin-bottom: 3em;
     border-bottom: solid 4px;
     border-image: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria)) 1;
-    text-shadow: 0px 0px 7.5px #ffffff82;
+    text-shadow: 0px 0px 10px #ffffffb0;
 }
 
 .subtitulo {
@@ -43,7 +43,7 @@ h1 {
 h2 {
     font-family: var(--fonte-titulo);
     text-transform: uppercase;
-    text-shadow: 0px 0px 4px #37daeb87;
+    text-shadow: 0px 0px 7.5px #37daeb87;
 }
 
 h3 {
@@ -68,6 +68,7 @@ p {
     border-top: solid 4px var(--cor-terciaria);
     border-image: radial-gradient(circle at center, var(--cor-terciaria), transparent)1;
     color: var(--cor-secundaria);
+    text-align: center;
 }
 
 .texto__espaco {
@@ -112,7 +113,7 @@ p {
 .botao:checked ~ .texto {
     display: block;
     padding-left: 4em;
-    padding-right: 1em;
+    padding-right: 4em;
     padding-top: 1.5em;
     padding-bottom: 2em;
     background: var(--cor-principal);
@@ -124,7 +125,7 @@ p {
 }
 
 .botao:checked ~ .texto__titulo {
-    border-radius: 35px 35px 1px 1px;
+    border-radius: 35px 35px 0 0;
     border-bottom: transparent;
 }
 
@@ -157,16 +158,16 @@ p {
 
     .textos {
         margin-top: 3em;
-        margin-left: 2em;
-        margin-right: 2em
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
     
     .texto__explicacao {
         padding: 1.5em;
         padding-top: 1em;
         border-radius: 40px;
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         margin-bottom: 2em;
     }
 
