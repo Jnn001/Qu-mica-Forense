@@ -1,48 +1,194 @@
-<html><head>
-    <title>Química Forense</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-  </head>
-    <body>
-        
-    <div class="titulo">
-        <h1>Química Forense</h1>
-        <h3 class="subtitulo">Principais casos resolvidos</h3>
-    </div>
-    <div class="texto__explicacao">
-            <h2 class="texto-0">O que é química forense?</h2>
-            <p>A química forense utiliza técnicas como cromatografia, espectrometria de massa e análise de DNA para investigar crimes, analisando substâncias como drogas, venenos e explosivos. Essas análises fornecem evidências cruciais para resolver crimes e buscar justiça.</p>
-        </div><section class="textos">
-    <h2 class="nome-secao">Casos solucionados</h2>
-        <div class="texto__espaco um">
-                    <input type="checkbox" id="botao-1" class="botao">
-            <label class="texto__titulo" for="botao-1">Georgi Markov</label>
-            <p class="texto">Georgi Markov, um dissidente búlgaro, foi envenenado em Londres em 1978. Ele sentiu uma picada na perna e viu um homem com um guarda-chuva que se desculpou e se afastou. Quatro dias depois, Markov morreu de envenenamento por ricina. Durante a autópsia, os legistas encontraram uma cápsula de metal na perna de Markov, que continha ricina. A cápsula foi projetada para liberar o veneno lentamente, causando sua morte gradual. A análise química detalhada revelou que o guarda-chuva foi modificado para injetar a cápsula na perna de Markov, destacando a sofisticação dos métodos de assassinato usados durante a Guerra Fria.</p>
-        </div>
-        <div class="texto__espaco dois">
-            <input type="checkbox" id="botao-2" class="botao">
-            <label class="texto__titulo" for="botao-2">Ben Johnson</label>
-            <p class="texto">O caso de Ben Johnson é um dos mais famosos na história do doping esportivo. Em 1988, durante os Jogos Olímpicos de Seul, o velocista canadense venceu a prova dos 100 metros rasos com um recorde mundial de 9,79 segundos. Três dias depois, Johnson foi desclassificado por testar positivo para estanozolol, um esteroide anabolizante. A química forense foi crucial na detecção do doping, utilizando técnicas avançadas de cromatografia e espectrometria de massa para identificar a substância. Este caso destacou a importância da química forense no combate ao doping e impulsionou o desenvolvimento de métodos mais rigorosos para a detecção de substâncias proibidas no esporte.</p>
-        </div>
-        <div class="texto__espaco tres">
-            <input type="checkbox" id="botao-3" class="botao">
-            <label class="texto__titulo" for="botao-3">Marie Lafarge</label>
-            <p class="texto">O caso de Marie Lafarge é um dos primeiros exemplos de uso da química forense para resolver um crime. Em 1840, Marie foi acusada de envenenar seu marido, Charles Lafarge, com arsênico. A química forense foi crucial para solucionar o caso. O químico Mathieu Orfila, pai da toxicologia forense, realizou testes nos restos mortais de Charles e nos alimentos enviados por Marie, detectando arsênico. A evidência química foi fundamental para a condenação de Marie, destacando a importância da química forense na investigação criminal e na busca por justiça.</p>
-        </div><div class="texto__espaco quatro">
-            <input type="checkbox" id="botao-4" class="botao">
-            <label class="texto__titulo" for="botao-4">Ted Bundy</label>
-            <p class="texto">Ted Bundy foi um dos serial killers mais notórios dos EUA, responsável por assassinatos brutais na década de 1970. Ele sequestrava, estuprava e matava jovens mulheres em vários estados. Capturado em 1978 e condenado à morte em 1979, a química forense foi crucial na sua condenação. A análise de marcas de mordida, especialmente no caso de Lisa Levy, forneceu provas irrefutáveis. Técnicas de odontologia forense compararam a marca da mordida com a arcada dentária de Bundy, ligando-o aos crimes e garantindo sua condenação.</p>
-        </div>
-    <div class="texto__espaco cinco">
-            <input type="checkbox" id="botao-5" class="botao">
-            <label class="texto__titulo" for="botao-5">Lance Armstrong</label>
-            <p class="texto">O caso do ciclista Lance Armstrong é um dos mais notórios na história do doping esportivo. Armstrong venceu o Tour de France sete vezes consecutivas entre 1999 e 2005, mas sua carreira foi manchada por acusações de uso de substâncias proibidas. A química forense foi crucial na descoberta do esquema de doping, com a USADA utilizando técnicas avançadas para detectar substâncias como eritropoietina (EPO) e testosterona sintética. Em 2012, Armstrong foi desqualificado e perdeu todos os seus títulos do Tour de France, destacando a importância da química forense na luta contra o doping esportivo.</p>
-        </div></section>
+:root {
+    --fonte-titulo: "Kodchasan";
+    --fonte-texto: "Poppins";
+    --cor-principal: #434343;
+    --cor-secundaria: #37daeb;
+    --cor-terciaria: #2be558;
+    --cor-de-fundo: #252530;
+    --cor-texto: white;
+    --gradiente: linear-gradient(90deg, #00987a, #00984c);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+}
+
+.titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 20px;
+    background: var(--gradiente);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-bottom: 3em;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria)) 1;
+    text-shadow: 0px 0px 10px #ffffffb0;
+}
+
+.subtitulo {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 7.5px #37daeb87;
+}
+
+h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--fonte-texto);
+}
+
+.textos {
+    margin-top: 6em;
+    margin-bottom: 4em;
+}
+
+.nome-secao {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0.75em 0.5em 0 0.5em;
+    border-top: solid 3px var(--cor-terciaria);
+    border-image: radial-gradient(circle at center, var(--cor-terciaria), transparent)1;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.texto__espaco {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+.texto__titulo {
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: var(--cor-secundaria);
+    padding: 15px 25px;
+    border-radius: 200px;
+    border: solid 3px var(--cor-terciaria);
+    text-align: center;
+    display: flex;
+    width: 10.75em;
+    flex-direction: column;
+    box-shadow: inset -5px -2px 20px 1px #000000bf;
+}
+
+.texto {
+    display: none;
+}
+
+.texto__explicacao {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background: var(--cor-principal);
+    margin: 0 4em 4em 4em;
+    border-radius: 50px;
+}
+
+.botao:checked ~ .texto {
+    display: block;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background: var(--cor-principal);
+    margin-bottom: 1em;
+    margin-top: 0em;
+    border-left: solid 3px var(--cor-terciaria);
+    border-image: linear-gradient(180deg, var(--cor-terciaria), transparent)1;
+    border-radius: 0 50px 50px 0;
+}
+
+.botao:checked ~ .texto__titulo {
+    border-radius: 35px 35px 0 0;
+    border-bottom: transparent;
+}
+
+.botao {
+    display: none;
+}
+
+.texto__titulo:hover {
+    background: var(--cor-terciaria);
+    border: solid 3px var(--cor-secundaria);
+    color: white;
+}
+
+.texto__titulo:hover ~ .texto {
+    border-left: solid 3px var(--cor-terciaria);
+    border-image: linear-gradient(180deg, var(--cor-secundaria), transparent)1;
+}
+
+@media screen and (max-width: 550px) {
+    .titulo {
+        padding-left: 1.75em;
+        margin-bottom: 2em;
+        font-size: 17.5px;
+    }
+
+    .nome-secao {
+        margin: 0em;
+        font-size: 20px;
+    }
+
+    .textos {
+        margin-top: 3em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
     
+    .texto__explicacao {
+        padding: 1.5em;
+        padding-top: 1em;
+        border-radius: 40px;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-bottom: 2em;
+    }
 
+    .texto-0 {
+        font-size: 20px;
+    }
 
-</body></html>
+    .texto__espaco {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .texto__titulo {
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 17.5px;
+    }
+    
+    .botao:checked ~ .texto {
+        padding: 1.5em;
+        border-radius: 0 40px 40px 0;
+        margin-bottom: 0;
+    }
+}
