@@ -25,7 +25,7 @@ body {
     padding-bottom: 1em;
     text-align: center;
     margin-bottom: 3em;
-    border-bottom: solid 4px;
+    border-bottom: solid 3px;
     border-image: linear-gradient(90deg, var(--cor-terciaria), var(--cor-secundaria)) 1;
     text-shadow: 0px 0px 10px #ffffffb0;
 }
@@ -65,7 +65,7 @@ p {
     margin-left: 3em;
     margin-right: 3em;
     padding: 0.75em 0.5em 0 0.5em;
-    border-top: solid 4px var(--cor-terciaria);
+    border-top: solid 3px var(--cor-terciaria);
     border-image: radial-gradient(circle at center, var(--cor-terciaria), transparent)1;
     color: var(--cor-secundaria);
     text-align: center;
@@ -88,7 +88,7 @@ p {
     background: var(--cor-secundaria);
     padding: 15px 25px;
     border-radius: 200px;
-    border: solid 4px var(--cor-terciaria);
+    border: solid 3px var(--cor-terciaria);
     text-align: center;
     display: flex;
     width: 10em;
@@ -119,7 +119,7 @@ p {
     background: var(--cor-principal);
     margin-bottom: 1em;
     margin-top: 0em;
-    border-left: solid 4px var(--cor-terciaria);
+    border-left: solid 3px var(--cor-terciaria);
     border-image: linear-gradient(180deg, var(--cor-terciaria), transparent)1;
     border-radius: 0 50px 50px 0;
 }
@@ -135,12 +135,12 @@ p {
 
 .texto__titulo:hover {
     background: var(--cor-terciaria);
-    border: solid 4px var(--cor-secundaria);
+    border: solid 3px var(--cor-secundaria);
     color: white;
 }
 
 .texto__titulo:hover ~ .texto {
-    border-left: solid 4px var(--cor-terciaria);
+    border-left: solid 3px var(--cor-terciaria);
     border-image: linear-gradient(180deg, var(--cor-secundaria), transparent)1;
 }
 
