@@ -94,6 +94,7 @@ p {
     width: 12em;
     flex-direction: column;
     box-shadow: inset -5px -2px 20px 1px #000000bf;
+    cursor: pointer;
 }
 
 .texto {
